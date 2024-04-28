@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="divya1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card2">
+            <div class="card-name1">PURPOSE</div> 
+            <img src="C:\Users\Shree\Desktop\cards\cards/img1.png">
+          </div>
+
+      <div class="card" id="card1">
+        <div class="card-name2">CONSISTENCY</div> 
+        <img src="C:\Users\Shree\Desktop\cards\cards/img2.png ">
+      </div>
+    
+      
+   <div class="card" id="card3">
+    <div class="card-name3">ACCESSIBILITY</div> 
+    <img src="C:\Users\Shree\Desktop\cards\cards/img3.png ">
+</div>
+
+<div class="card" id="card4">
+  <div class="card-name4"> REDUCED TIMELINE FOR HIRING</div>
+  <img src="C:\Users\Shree\Desktop\cards\cards/img4.png">
+</div>
+</div>
+
+<script>
+    const cards = document.querySelectorAll('.card');
+  
+    cards.forEach(card => {
+      card.addEventListener('click', function() {
+        if (this.style.backgroundColor === 'red') {
+          this.style.backgroundColor = '#f0f0f0'; 
+        } else {
+          this.style.backgroundColor = 'red'; 
+        }
+      });
+    });
+  </script>
+  </body>
+</html>
+
